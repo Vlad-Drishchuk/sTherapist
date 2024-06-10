@@ -1,0 +1,9 @@
+{
+    "name": "sTherapist Full",
+    "short_name": "sTherapist",
+  
+    "start_url": "index.html",
+    "background_color": "#CBF3F0",
+    "theme_color": "#CBF3F0",
+    "display": "standalone"
+}

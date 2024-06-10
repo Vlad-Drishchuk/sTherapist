@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --main-color:#CBF3F0;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Ubuntu";
+  margin-left: 5vw;
+}
+body .h2 {
+  margin-top: -10px;
+}
+body .popular-cetegory {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  justify-content: space-around;
+  margin: 0;
+}
+body .popular-cetegory .pop-el {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 35px;
+  height: 35px;
+  padding: 17.5px;
+}
+body .popular-cetegory .pop-el img {
+  width: 35px;
+  height: 35px;
+}
+body nav {
+  max-width: 90vw;
+}
+body nav .el-row {
+  margin-top: 10px;
+}
+body nav .el-butt {
+  width: 40vw;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: "Ubuntu";
+  color: #000;
+  font-size: 12pt;
+  margin-left: 2.5vw;
+  border-color: #fff;
+  border-style: none;
+  box-sizing: border-box;
+}
+body nav .butt6 {
+  font-size: 8pt;
+}
+body .form {
+  width: 60vw;
+  margin-left: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+body .form input {
+  height: 37px;
+  border: none;
+  font-size: 13pt;
+}
+body .form button {
+  margin-top: 10px;
+  height: 37px;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: "Ubuntu";
+  color: #000;
+  font-size: 12pt;
+  margin-left: 2.5vw;
+  border-color: #fff;
+  border-style: none;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

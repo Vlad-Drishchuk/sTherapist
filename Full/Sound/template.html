@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Template</title>
+</head>
+<body>
+    <h1 id="animal-name"></h1>
+    <img id="animal-image" src="" alt="Animal Image">
+    <audio id="animal-sound" ></audio>
+
+    <script>
+        const soundFiles = {
+           
+        };
+
+        const imageFiles = {
+           
+        };
+
+        // Get animal from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const animal = urlParams.get('sound');
+
+        // Set animal name, image, and sound
+        if (animal && soundFiles[animal] && imageFiles[animal]) {
+            document.getElementById('animal-name').innerText = animal.charAt(0).toUpperCase() + animal.slice(1);
+            document.getElementById('animal-image').src = imageFiles[animal];
+            document.getElementById('animal-sound').src = soundFiles[animal];
+        } else {
+            document.getElementById('animal-name').innerText = 'Animal not found';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sTherapist</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/style/index.css">
+</head>
+<body>
+    <h1>sTherapist</h1>
+    <h2 class="h2">Популярні категорії</h2>
+    <div class="popular-cetegory">
+        <div class="pop-el" onclick="location.href='Sound/Animals.html'"><img src="assets/img/Animals.png" alt=""></div>
+        <div class="pop-el"><img src="assets/img/House.png" alt=""></div>
+        <div class="pop-el"><img src="assets/img/Transport.png" alt=""></div>
+    </div>
+    <h2 class="SoundMainTitle">Звуки</h2>
+    <nav>
+        <div class="el-row">
+            <button class="el-butt">Звуки людей</button>
+            <button class="el-butt">Звуки в природі</button>
+        </div>
+        <div class="el-row">
+            <button class="el-butt">Транспорт</button>
+            <button class="el-butt">Природа</button>
+        </div>
+        <div class="el-row">
+            <button class="el-butt">Тварини</button>
+            <button class="el-butt butt6">Музичні           інструменти</button>
+        </div>
+    </nav>
+    <h2>Додай звук 🥰</h2>
+    <div class="form">
+        <input type="text" id="message" placeholder="Напишіть звук"> 
+    <button id="Send">Відправити</button>
+    </div>
+    
+
+    <script type="module" src="assets/js/firebase.js"></script>
+</body>
+</html>
