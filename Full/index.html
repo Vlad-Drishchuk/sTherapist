@@ -26,8 +26,8 @@
             <button class="el-butt">Природа</button>
         </div>
         <div class="el-row">
-            <button class="el-butt">Тварини</button>
-            <button class="el-butt butt6">Музичні           інструменти</button>
+            <button class="el-butt" onclick="location.href='Sound/Animals.html'">Тварини</button>
+            <button class="el-butt butt6">Музичні інструменти</button>
         </div>
     </nav>
     <h2>Додай звук 🥰</h2>
@@ -35,7 +35,16 @@
         <input type="text" id="message" placeholder="Напишіть звук"> 
     <button id="Send">Відправити</button>
     </div>
-    
+    <script src="assets/js/links.js"></script>
+
+    <h3>Звуків в системі:  <script>
+        let n =1;
+        for (const sound in soundsData) {
+            n=n+1
+        }
+        document.write(n);
+    </script></h3>
+   
 
     <script type="module" src="assets/js/firebase.js"></script>
 </body>

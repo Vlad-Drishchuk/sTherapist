@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Template</title>
+    <title> Template </title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="stylesheet" href="../assets/style/menu.css">
 </head>
 <body>
-    <h1 id="animal-name"></h1>
-    <img id="animal-image" src="" alt="Animal Image">
-    <audio id="animal-sound" ></audio>
+   
+    <button class="butt-back" onclick="history.back()">Назад</button>
 
+    <img id="sound-image" src="" alt="">
+    <audio id="sound-audio" ></audio>
+
+    <div class="ButtSound" >
+
+        <div class="Sound-Parents">
+          <button class="SoundMenu" data-lang="Play" onclick="document.getElementById('sound-audio').play();">Слухати</button>
+          <button class="SoundMenu" data-lang="Pause" onclick="document.getElementById('sound-audio').pause();">Зупинити</button>
+    
+        </div>
+      </div>
+
+    <script src="../assets/js/links.js"></script>
     <script>
-        const soundFiles = {
-           
-        };
+        
+        const params = new URLSearchParams(window.location.search);
+        const soundKey = params.get('sound');
 
-        const imageFiles = {
-           
-        };
-
-        // Get animal from URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const animal = urlParams.get('sound');
-
-        // Set animal name, image, and sound
-        if (animal && soundFiles[animal] && imageFiles[animal]) {
-            document.getElementById('animal-name').innerText = animal.charAt(0).toUpperCase() + animal.slice(1);
-            document.getElementById('animal-image').src = imageFiles[animal];
-            document.getElementById('animal-sound').src = soundFiles[animal];
+        if (soundsData[soundKey]) {
+            const soundData = soundsData[soundKey];
+            document.getElementById('sound-image').src = soundData.img;
+            document.getElementById('sound-audio').src = soundData.audio;
         } else {
-            document.getElementById('animal-name').innerText = 'Animal not found';
+            document.getElementById('sound-name').textContent = 'Звук не знайдено';
         }
+const urlParams = new URLSearchParams(window.location.search);
+const soundParam = urlParams.get('sound');
+
+// Функція для встановлення параметра sound як заголовка сторінки
+function setSoundAsTitle() {
+    document.title = soundParam;
+}
+
+// Виклик функції після завантаження сторінки
+window.onload = setSoundAsTitle;
+
+
+
     </script>
 </body>
 </html>

@@ -35,4 +35,33 @@
 
 h1 {
   margin-top: 5px;
+}
+
+img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  height: 100vh;
+  z-index: -1;
+}
+
+.ButtSound {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+}
+.ButtSound .Sound-Parents {
+  display: flex;
+  flex-direction: row;
+}
+.ButtSound .Sound-Parents .SoundMenu {
+  height: 52px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 7.5vw;
+  width: 35vw;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
 }/*# sourceMappingURL=menu.css.map */
