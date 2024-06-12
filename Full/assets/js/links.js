@@ -54,9 +54,17 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/8qhfupy3z62al70ppgufz/.jpeg?rlkey=1oeryc0yvkawh8w9oul9y5qdy&st=g3vabj8u&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/yc0eixm9a2qyzmf476lrn/.mp3?rlkey=kr135po6dnnt8zs17zevwstry&st=1i9l9crk&raw=1" 
     },
-    // "Snoring": { ua: "Хропіння", img: "images/snoring.jpg", audio: "sounds/snoring.mp3" },
+    "Snoring": { 
+        ua: "Хропіння", 
+        img: "https://www.dropbox.com/scl/fi/r60huotrp4ig8ogtt2ctt/.jpeg?rlkey=4g030cwoxz4i2sam0tvo5ffy4&st=tqw3b464&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/crv7hkatb78v96era9x65/.mp3?rlkey=z4kdtzzwyklj0g6ut9cpl8lv0&st=56dgz2ar&raw=1" 
+    },
     // "Laughter": { ua: "Сміх", img: "images/laughter.jpg", audio: "sounds/laughter.mp3" },
-    // "Brushing_teeth": { ua: "Чищення зубів", img: "images/brushing_teeth.jpg", audio: "sounds/brushing_teeth.mp3" },
+    "Brushing_teeth": { 
+        ua: "Чищення зубів", 
+        img: "https://www.dropbox.com/scl/fi/ztb3wscl2vyzcqfjdooq7/.jpg?rlkey=sa2owh3ic7e044g3dv0aslv8c&st=m76x5v75&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/mpk7oix32xv1va2oc8ja8/.mp3?rlkey=zfjwvi1u90dgrskdwb42nzzdc&st=ox07xgwx&raw=1" 
+    },
     "Children_outside": { 
         ua: "Діти на вулиці", 
         img: "https://www.dropbox.com/scl/fi/f9lp84zl0t30e0ii4y684/.jpeg?rlkey=qhhq5ofb138o7jx7uiiltb7vs&st=taqqgz34&raw=1", 
@@ -79,14 +87,22 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/237xiuoffwciwvc04dhso/.jpeg?rlkey=7w0mocfap99lo6ti7h6xlrjkq&st=nuhykf3o&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/cdpz3f26nzrajw00uxj5l/.mp3?rlkey=41dj6nkh9a76up2b4qd2g9cu6&st=6poajd78&raw=1" 
     },
-    // "Knife_knock": { ua: "Стук ножа", img: "images/knife_knock.jpg", audio: "sounds/knife_knock.mp3" },
-    // "Tap_water": { ua: "Шум води з крану", img: "images/tap_water.jpg", audio: "sounds/tap_water.mp3" },
+    "Knife_knock": { 
+        ua: "Стук ножа", 
+        img: "https://www.dropbox.com/scl/fi/ya83y5hglbu0obn490ldk/.jpeg?rlkey=ndks9fbvq9fxinhh9jjv6s30e&st=8vdpbokl&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/izo2i35v8hiafnw7aqiaf/.mp3?rlkey=sqmn6azcvi4orkfi22x3d61ue&st=13bp8fsq&raw=1" 
+    },
+    "Tap_water": { 
+        ua: "Шум води з крану", 
+        img: "https://www.dropbox.com/scl/fi/98xkq5qvgi0dekt18ph76/.jpeg?rlkey=489zvba30ev7o17q6y5si6swz&st=89tgdxqq&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/mdv1u2bzv9yjod022no67/.mp3?rlkey=gcgbfuak6cro561s0gmgdukan&st=le500cub&raw=1"
+    },
     "Boiling_water": { 
         ua: "Кипіння води", 
         img: "https://www.dropbox.com/scl/fi/5zot3xycss4254k451mjq/.jpeg?rlkey=zepszysvvtl8fpcq9vj01j0vv&st=02nvw2c8&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/pmvlv95djk4svi8ivzkf6/.mp3?rlkey=hshyjk8sl3cb3p1ppvsg6ldry&st=b9gio55n&raw=1" 
     },
-    // "Frying_eggs": { ua: "Яєшня", img: "images/frying_eggs.jpg", audio: "sounds/frying_eggs.mp3" },
+    "Frying_eggs": { ua: "Яєшня", img: "https://www.dropbox.com/scl/fi/ahxaegjd66x8vtuq4l1y9/.jpeg?rlkey=kutevw46kolj990mir6b1744m&st=pcaisp78&raw=1", audio: "https://www.dropbox.com/scl/fi/v74zwszegp66rt0w0jtvx/.mp3?rlkey=sdne82ab92fvj3iu1q4873don&st=roozwyyr&raw=1" },
     "Popcorn": { 
         ua: "Попкорн", 
         img: "https://www.dropbox.com/scl/fi/u3o0mpc3potn15t8vaf2p/.jpeg?rlkey=jcfuyehbrr4c8b1mt5rqbesu8&st=oy9akqgw&raw=1", 
@@ -107,16 +123,36 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/haeghhitqjdd2bf05qy5l/.jpeg?rlkey=o4ckdftpr9hv5tsaimc453pbg&st=c4oop72p&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/z9n2mpmg7m5rwontlqkrp/.mp3?rlkey=uu0bhvgpkqweplnfo8h9y0u1j&st=fqj4uptn&raw=1" 
     },
-    // "Door_knock": { ua: "Стук у двері", img: "images/door_knock.jpg", audio: "sounds/door_knock.mp3" },
-    // "Hair_dryer": { ua: "Фен", img: "images/hair_dryer.jpg", audio: "sounds/hair_dryer.mp3" },
-    // "Watch": { ua: "Цокання годинника", img: "images/watch.jpg", audio: "sounds/watch.mp3" },
-    // "Rustle_of_paper": { ua: "Шелест паперу", img: "images/rustle_of_paper.jpg", audio: "sounds/rustle_of_paper.mp3" },
+    "Door_knock": { 
+        ua: "Стук у двері", 
+        img: "https://www.dropbox.com/scl/fi/97ryd3nsgkgmdh80lexv5/.jpeg?rlkey=85on4sp0tax55zefvo6cywzrb&st=e293py1e&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/1l66fur8rt0jkugibq9nk/.mp3?rlkey=q6p8kefhl6dkx711m6s7uci4d&st=j51uevzx&raw=1" 
+    },
+    "Hair_dryer": { 
+        ua: "Фен", 
+        img: "https://www.dropbox.com/scl/fi/awfj6dw7ja6hejsqezstb/.mp3?rlkey=vumarqgbwoexw224hsvdf1m9x&st=w16iioyh&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/q16m7al7lgct9qjfbcyos/.mp3?rlkey=2fmlpen0ov68s5m3xnxtt9xnl&st=rmg3r89z&raw=1" 
+    },
+    "Watch": { 
+        ua: "Цокання годинника", 
+        img: "https://www.dropbox.com/scl/fi/qm1h4wrnrasidyme822x1/.jpeg?rlkey=11yfwv140lindqkx6w1oedxja&st=smjzqqmq&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/fvk61obz0fcatvavnv2x2/.mp3?rlkey=q6o2v1a1t4sqiatuin0rdnewi&st=lzudvxsi&raw=1" 
+    },
+    "Rustle_of_paper": { 
+        ua: "Шелест паперу", 
+        img: "https://www.dropbox.com/scl/fi/w1qg720vjaafst535czvx/.jpg?rlkey=m2u8kvogsu7wizxyymiyinmpj&st=0yhuj35w&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/k4cjkbos19vsfwmwnme7l/.mp3?rlkey=eprpuksaqkrzeflf7sbyk2pno&st=3x4tvfhp&raw=1"
+    },
     "Hammer": { 
         ua: "Молоток", 
         img: "https://www.dropbox.com/scl/fi/0p7p44xdwbh2i9mj1npom/.jpeg?rlkey=6gylidpexhl7reg7qp6m2fl6f&st=n18x1tp7&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/81qjtbbpvrzq7j4fwo7yv/.mp3?rlkey=4o59thhmfs1hwis0a7qb5inlz&st=cscn4o7y&raw=1" 
     },
-    // "Heels_clicking": { ua: "Цокання каблуками", img: "images/heels_clicking.jpg", audio: "sounds/heels_clicking.mp3" },
+    "Heels_clicking": { 
+        ua: "Цокання каблуками", 
+        img: "https://www.dropbox.com/scl/fi/6f40s60v2l3nron38ism9/.jpeg?rlkey=1tu8cdhjqi3cqengin9gwl1xs&st=r0cpuizh&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/i533n7sxalb953hpmgp2d/.mp3?rlkey=r3ocvtxl5b38qpmexku0au5ud&st=hmmak3zs&raw=1" 
+    },
     "Doorbell": { 
         ua: "Дзвінок у двері", 
         img: "https://www.dropbox.com/scl/fi/03q43ojiln2t94wo8ftkl/.jpeg?rlkey=kihvjxxl1mg1lht0f95u7t9kk&st=weorc3ix&raw=1", 
@@ -151,7 +187,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/1qnamenvrt21xp3yiod4j/.jpeg?rlkey=9b568r866cu6j0hkmzdqlha9m&st=05asplfd&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/nwjy1i163w1h1iaxtcwxf/.mp3?rlkey=n4e7uihcyrornj7da5re9t931&st=qu30q43m&raw=1" 
     },
-    // "Ambulance": { ua: "Швидка", img: "images/ambulance.jpg", audio: "sounds/ambulance.mp3" },
+    "Ambulance": { 
+        ua: "Швидка", 
+        img: "https://www.dropbox.com/scl/fi/0uu2ur1j762wc9cvhn7wa/.jpeg?rlkey=oaddgmnwb4xdj8yjziybwa48d&st=kyoqo8q4&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/ntliki0w6uwy77jjg9t7r/.mp3?rlkey=acqzjs7grehmrlvi5u5ohvrdt&st=l81w2pkn&raw=1"
+    },
     "Police": { 
         ua: "Поліція", 
         img: "https://www.dropbox.com/scl/fi/ljd6zqdl7esh5mkzhrckf/.jpeg?rlkey=n12cej8qf9jtz3ucwlwkgiv0b&st=36wn97lx&raw=1", 
@@ -162,13 +202,21 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/0aqzfzzklofhabr0uhfk4/.jpeg?rlkey=psqso0qntojz9qnvkzl90423v&st=079mrhdp&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/d6jal6585fcf9vkcqwuqr/.mp3?rlkey=0u23epi7zhhb71n7bp2i2rhg1&st=o5srp7cy&raw=1" 
     },
-    // "Tractor": { ua: "Трактор", img: "images/tractor.jpg", audio: "sounds/tractor.mp3" },
+    "Tractor": { 
+        ua: "Трактор", 
+        img: "https://www.dropbox.com/scl/fi/1qnfwip3n72hqm9tgogt0/.jpeg?rlkey=rp0smj9b6k160iql3jty9xlq6&st=2fb1t2uq&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/da6a0xqg31as89o8z2nyw/.mp3?rlkey=snjyy8bc8gpsdc5cg64npjtek&st=64a2i8qt&raw=1" 
+    },
     "Wind": { 
         ua: "Вітер", 
         img: "https://www.dropbox.com/scl/fi/zoxz1yyez36m3bsovucso/.jpeg?rlkey=om6ci3b2sb1t82lezt6dwdo4p&st=eva2z4yo&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/3vngeuaq28cfm1nqs54x4/.mp3?rlkey=hn0628420o552j7e04wm5ph3h&st=h3u01myn&raw=1" 
     },
-    // "Blizzard": { ua: "Хуртовина", img: "images/blizzard.jpg", audio: "sounds/blizzard.mp3" },
+    "Blizzard": { 
+        ua: "Хуртовина", 
+        img: "https://www.dropbox.com/scl/fi/3asixndsc68plr7natvdk/.jpeg?rlkey=ds6shi703e10mjab3uahcvjo5&st=5c35r860&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/wppycjcv2l1cf9iyejtoj/.mp3?rlkey=coxskrun4nivhbsiyw0ywmx9w&st=2g2d5v4d&raw=1" 
+    },
     "Thunder": { 
         ua: "Грім", 
         img: "https://www.dropbox.com/scl/fi/ufzxna74w17qbmj5lds5n/.jpg?rlkey=iz454506edkjch8jkceouhl8h&st=ib9ea5fo&raw=1", 
@@ -184,7 +232,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/ufwjtnbf3o50yh3hm7w8a/.jpeg?rlkey=dsc5xruaqtfw2c3qyqq8rg1kk&st=ychcd16y&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/5n960wpc93aje1owm7l43/.mp3?rlkey=y813cdnaqqo1gciyycp0i7qxo&st=8ljk64mu&raw=1" 
     },
-    // "Leaves": { ua: "Шарудіння листям", img: "images/leaves.jpg", audio: "sounds/leaves.mp3" },
+    "Leaves": { 
+        ua: "Шарудіння листям", 
+        img: "https://www.dropbox.com/scl/fi/y887ljti2891xbo1xs6qg/.jpeg?rlkey=9ub9600wxvhgu1zpl201g9yot&st=sytlxkyj&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/jl13l53vqx2jum675qahy/.mp3?rlkey=kvlysizm6h1y8f6z7zfmiicju&st=c2s7f3du&raw=1"
+    },
     "Strong_wind": { 
         ua: "Сильний вітер", 
         img: "https://www.dropbox.com/scl/fi/gnqgo5g0ywgldmh6w0ccy/.jpeg?rlkey=fh602qggyjxzry2v294wz6y0q&st=4hgss42w&raw=1", 
@@ -290,7 +342,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/xht06cggumz2shcrj4pqw/.jpg?rlkey=a89ki94jtxw3h64brx2jntj0g&st=utx68f4z&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/6bf23a6lro8bfro2fbnqp/.mp3?rlkey=ptqbaihl61dx6jtmydjy0okhy&st=ld3zckr0&raw=1" 
     },
-    // "Owl": { ua: "Сова", img: "images/owl.jpg", audio: "sounds/owl.mp3" },
+    "Owl": { 
+        ua: "Сова", 
+        img: "https://www.dropbox.com/scl/fi/ln7qa5f4jeskliaydtp8d/.jpg?rlkey=dt3dy4m1j14a18yrfnht1k909&st=y15fcq4s&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/ps2o8p9uxzfli840hi2jk/.mp3?rlkey=7nmnfrsoqigasm6ii54ysoqh4&st=ixtuhuog&raw=1" 
+    },
     "Snake": { 
         ua: "Змія", 
         img: "https://www.dropbox.com/scl/fi/96vabqb0fc4nimc6ffqbn/.jpg?rlkey=tj1dvu2rtj8h6wj5a0kngo9kz&st=xaawx8vm&raw=1", 
@@ -320,7 +376,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/69xst8p4osaeo85pc8vom/.jpeg?rlkey=2lihwebp85bkmy3tjdmjluw5l&st=m709lqz2&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/40fu7ro7ov2egrjn6ylv4/.mp3?rlkey=av1tfub0fmo4xa3yutrhqrjc9&st=8vumsxn4&raw=1" 
     },
-    // "Seal": { ua: "Тюлень", img: "images/seal.jpg", audio: "sounds/seal.mp3" },
+    "Seal": { 
+        ua: "Тюлень", 
+        img: "https://www.dropbox.com/scl/fi/7t5sx7h2ow8aipt2t8l9i/.jpeg?rlkey=394ibs3517vezb5cxkr6ml86x&st=2r1kmmzz&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/awfj6dw7ja6hejsqezstb/.mp3?rlkey=vumarqgbwoexw224hsvdf1m9x&st=w16iioyh&raw=1" 
+    },
     "Lion": { 
         ua: "Лев", 
         img: "https://www.dropbox.com/scl/fi/7g91i4l2hjt089fwvcgzk/.jpeg?rlkey=iexfjbufgyksza7dpo90gqaeo&st=k6101w77&raw=1", 
@@ -351,8 +411,16 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/gwd3t6r55snbynmemvznc/.png?rlkey=t23fpuvv1ltb79hbh6lzlrdz0&st=4yf3691k&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/92rcvsblzevfak7rrr5x1/.mp3?rlkey=yhag10rxwx07rpq1l6pc3n7k6&st=j3vhtvb5&raw=1"
     },
-    // "Piano": { ua: "Фортепіано", img: "images/piano.jpg", audio: "sounds/piano.mp3" },
-    // "Trumpet": { ua: "Труба", img: "images/trumpet.jpg", audio: "sounds/trumpet.mp3" },
+    "Piano": { 
+        ua: "Фортепіано", 
+        img: "https://www.dropbox.com/scl/fi/u8o3h24xpkcy5pj6ex9n3/.jpeg?rlkey=7yvvu31lqxhb6fy4ul1wp3wvv&st=a5tso00w&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/qxt69lbt2d3ea8aawfb4x/.mp3?rlkey=pqq2vbii4yrp9aq1bs8w2bnv2&st=mraslmp3&raw=1" 
+    },
+    "Trumpet": { 
+        ua: "Труба", 
+        img: "https://www.dropbox.com/scl/fi/vw27ytfb0k12dg551y9kf/.jpeg?rlkey=v2cwkyr08o0ta8s8k2brqo0cz&st=bgxnsymf&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/o6z2ysnkpjizvbcup9qpn/.mp3?rlkey=c3psy4o15adnkd6ly9tn0uzu7&st=3dq333gd&raw=1" 
+    },
     "Guitar": { 
         ua: "Гітара", 
         img: "https://www.dropbox.com/scl/fi/v8og7lnojjzo7q6t65f0p/.jpeg?rlkey=18hqzvesk12yi2cuclt428uwv&st=6usky2fn&raw=1", 
@@ -362,7 +430,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/5fpxf2u13l84m50lctzqt/.jpeg?rlkey=ekhfqahnee5pwqriioqjw158d&st=9zmej076&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/qfuj02kcaqfaybejt5880/.mp3?rlkey=lpc2xp3ihc30uwzh0id09sbrh&st=hh358mmg&raw=1" 
     },
-    // "Flute": { ua: "Сопілка", img: "images/flute.jpg", audio: "sounds/flute.mp3" },
+    "Flute": { 
+        ua: "Сопілка", 
+        img: "https://www.dropbox.com/scl/fi/m4krsl5z0bt4wczvtu8yc/.jpeg?rlkey=cm3i7d63867m0vghfy9s412lh&st=qvlb3hxq&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/f6l3l91w05f6k291djbx3/.mp3?rlkey=8xngmml8z9e21v46oisqy0u6y&st=xnyd9dto&raw=1" 
+    },
     // Add more sounds as needed
 
     // "Stream": {
