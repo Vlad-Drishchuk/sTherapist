@@ -74,4 +74,25 @@ body .form button {
   border-color: #fff;
   border-style: none;
   box-sizing: border-box;
+}
+
+.menu-butt {
+  max-width: 90vw;
+}
+.menu-butt .el-row {
+  margin-top: 10px;
+  display: flex;
+}
+.menu-butt .el-butt {
+  width: 40vw;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: "Ubuntu";
+  color: #000;
+  font-size: 12pt;
+  margin-left: 2.5vw;
+  border-color: #fff;
+  border-style: none;
+  box-sizing: border-box;
 }/*# sourceMappingURL=index.css.map */

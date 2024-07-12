@@ -1,11 +1,21 @@
 const soundsData = {
+    "ua":{
+        ua:"Українська",
+        en:"Ukrainian"
+    },
+    "en":{
+        ua:"Англійська",
+        en:"English"
+    },
     "Mom": {
         ua: "Мама",
+        en: "Mom",
         img: "https://www.dropbox.com/scl/fi/0r2g94f1ohfixry70tc8t/.jpeg?rlkey=vmitwdt4wjv7kqbx5nvor6jgh&st=d458wu6w&raw=1",
         audio: "https://www.dropbox.com/scl/fi/mp0c49xn58fg01f2yuvr6/.m4a?rlkey=w4pe21lngn0vmopulb2t5jbh9&st=gcridq0e&raw=1"
     },
     "Girl": {
         ua: "Дівчинка", 
+        en: "",
         img: "https://www.dropbox.com/scl/fi/a69zw8hdeodvso5rd4t2e/.jpeg?rlkey=162sr7h7y2u2ebgaxq8watjd1&st=eun6c4hu&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/qrmgnwbbmuweoxrppexgr/.m4a?rlkey=2lliplgdo2os6z26bdbuma6hq&st=078g0jx3&raw=1" 
     },
@@ -102,7 +112,11 @@ const soundsData = {
         img: "https://www.dropbox.com/scl/fi/5zot3xycss4254k451mjq/.jpeg?rlkey=zepszysvvtl8fpcq9vj01j0vv&st=02nvw2c8&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/pmvlv95djk4svi8ivzkf6/.mp3?rlkey=hshyjk8sl3cb3p1ppvsg6ldry&st=b9gio55n&raw=1" 
     },
-    "Frying_eggs": { ua: "Яєшня", img: "https://www.dropbox.com/scl/fi/ahxaegjd66x8vtuq4l1y9/.jpeg?rlkey=kutevw46kolj990mir6b1744m&st=pcaisp78&raw=1", audio: "https://www.dropbox.com/scl/fi/v74zwszegp66rt0w0jtvx/.mp3?rlkey=sdne82ab92fvj3iu1q4873don&st=roozwyyr&raw=1" },
+    "Frying_eggs": { 
+        ua: "Яєшня", 
+        img: "https://www.dropbox.com/scl/fi/ahxaegjd66x8vtuq4l1y9/.jpeg?rlkey=kutevw46kolj990mir6b1744m&st=pcaisp78&raw=1", 
+        audio: "https://www.dropbox.com/scl/fi/v74zwszegp66rt0w0jtvx/.mp3?rlkey=sdne82ab92fvj3iu1q4873don&st=roozwyyr&raw=1" 
+    },
     "Popcorn": { 
         ua: "Попкорн", 
         img: "https://www.dropbox.com/scl/fi/u3o0mpc3potn15t8vaf2p/.jpeg?rlkey=jcfuyehbrr4c8b1mt5rqbesu8&st=oy9akqgw&raw=1", 
@@ -427,6 +441,7 @@ const soundsData = {
         audio: "https://www.dropbox.com/scl/fi/40437z3uavra853x13jfo/.mp3?rlkey=2mvjv4g8bld5hdu7wuc1tel47&st=83pdoutp&raw=1" },
     "Violin": { 
         ua: "Скрипка", 
+        pl: "s",
         img: "https://www.dropbox.com/scl/fi/5fpxf2u13l84m50lctzqt/.jpeg?rlkey=ekhfqahnee5pwqriioqjw158d&st=9zmej076&raw=1", 
         audio: "https://www.dropbox.com/scl/fi/qfuj02kcaqfaybejt5880/.mp3?rlkey=lpc2xp3ihc30uwzh0id09sbrh&st=hh358mmg&raw=1" 
     },
@@ -453,3 +468,95 @@ const soundsData = {
     //     audio: "sounds/fire.mp3"
     // },
 };
+
+const langButtons = document.querySelectorAll("[data-btn]");
+const allLangs = ["ua", "en"];
+const currentPathName = window.location.pathname;
+let currentLang =
+    localStorage.getItem("language") || checkBrowserLang() || "ua";
+let currentTexts = {};
+
+
+
+
+
+// Проверка пути страницы сайта
+function checkPagePathName() {
+    switch (currentPathName) {
+        case "/index.html":
+            currentTexts = soundsData;
+            break;
+
+
+        default:
+            currentTexts = soundsData;
+            break;
+    }
+}
+checkPagePathName();
+
+// Изменение языка у текстов
+function changeLang() {
+    for (const key in currentTexts) {
+        let elem = document.querySelector(`[data-lang=${key}]`);
+        if (elem) {
+            elem.textContent = currentTexts[key][currentLang];
+        }
+    }
+}
+changeLang();
+
+// Вешаем обработчики на каждую кнопку
+langButtons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        if (!event.target.classList.contains("header__btn_active")) {
+            currentLang = event.target.dataset.btn;
+            localStorage.setItem("language", event.target.dataset.btn);
+            resetActiveClass(langButtons, "header__btn_active");
+            btn.classList.add("header__btn_active");
+            changeLang();
+        }
+    });
+});
+
+// Сброс активного класса у переданного массива элементов
+function resetActiveClass(arr, activeClass) {
+    arr.forEach((elem) => {
+        elem.classList.remove(activeClass);
+    });
+}
+
+// Проверка активной кнопки
+function checkActiveLangButton() {
+    switch (currentLang) {
+        case "ua":
+            document
+                .querySelector('[data-btn="ua"]')
+                .classList.add("header__btn_active");
+            break;
+        case "en":
+            document
+                .querySelector('[data-btn="en"]')
+                .classList.add("header__btn_active");
+            break;
+
+
+        default:
+            document
+                .querySelector('[data-btn="ua"]')
+                .classList.add("header__btn_active");
+            break;
+    }
+}
+checkActiveLangButton();
+
+// Проверка языка браузера
+function checkBrowserLang() {
+    const navLang = navigator.language.slice(0, 2).toLowerCase();
+    const result = allLangs.some((elem) => {
+        return elem === navLang;
+    });
+    if (result) {
+        return navLang;
+    }
+}
