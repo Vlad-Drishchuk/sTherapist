@@ -1,7 +1,13 @@
 {
     "name": "sTherapist sound",
     "short_name": "sTherapist",
-  
+    "icons": [
+        {
+            "type": "image/png",
+            "src": "IconB.png",
+            "sizes": "512x512"
+        }
+    ],
     "start_url": "index.html",
     "background_color": "#CBF3F0",
     "theme_color": "#CBF3F0",
